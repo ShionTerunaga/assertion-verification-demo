@@ -1,0 +1,17 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "overrides": [
+    {
+      "files": ["test/**/*.test.ts", "test/**/*.spec.ts", "**/*.test.ts", "**/*.spec.ts"],
+      "env": {
+        "vitest": true
+      },
+      "plugins": ["oxc", "typescript", "unicorn", "vitest"],
+      "rules": {
+        "vitest/no-conditional-in-test": "error",
+        "vitest/no-conditional-expect": "error",
+        "vitest/no-conditional-tests": "error"
+      }
+    }
+  ]
+}
