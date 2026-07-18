@@ -1,11 +1,11 @@
-import { describe, expect, it, assert } from "vitest";
+import { describe, expect, it } from "vitest";
 
 import { okValue } from "../src/ok";
 
 describe("okValue", () => {
   it("verify okValue", () => {
     const value = okValue();
-    assert(value.kind === "ok");
+    expect.assert(value.kind === "ok");
     //if(value.kind !== "ok") {
     //  throw new Error("unexpected ok value");
     //}
@@ -24,7 +24,7 @@ describe("okValue", () => {
 
   it("verify assert", () => {
     const value = okValue();
-    assert(value.kind === "ok");
+    expect.assert(value.kind === "ok");
     expect(value.value).toBe("hoge");
   });
 
@@ -35,6 +35,6 @@ describe("okValue", () => {
 
   it("verify assert kind ng", () => {
     const value = okValue();
-    assert(value.kind === "ng", "unexpected ok value");
+    expect.assert(value.kind === "ng", "unexpected ok value");
   });
 });
