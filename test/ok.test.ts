@@ -3,6 +3,14 @@ import { describe, expect, it } from "vitest";
 import { okValue } from "../src/ok";
 
 describe("okValue", () => {
+  //it("dummy test", () => {
+  //  const value = okValue();
+  //
+  //  if (value.kind !== "ok") {
+  //    expect(value.kind).toBe("ng");
+  //  }
+  //});
+
   it("verify okValue", () => {
     const value = okValue();
     expect.assert(value.kind === "ok");
