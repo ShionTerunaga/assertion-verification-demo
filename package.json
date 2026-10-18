@@ -14,7 +14,7 @@
   "dependencies": {
     "ts-utility-kit": "^2.1.0",
     "typescript": "^7.0.2",
-    "vitest": "^4.1.10"
+    "vitest": "^5.0.5"
   },
   "devDependencies": {
     "oxfmt": "^0.58.0",
